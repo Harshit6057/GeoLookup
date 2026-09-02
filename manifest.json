@@ -4,7 +4,10 @@
   "platform": "4.5.0",
   "metadata": {
     "appmode": "shiny",
-    "entrypoint": "geolookup.R"
+    "primary_rmd": null,
+    "primary_html": null,
+    "content_category": null,
+    "has_parameters": false
   },
   "packages": [
     {"name": "shiny", "source": "cran", "version": "1.11.1"},
@@ -17,5 +20,11 @@
     {"name": "lubridate", "source": "cran", "version": "1.9.4"},
     {"name": "scales", "source": "cran", "version": "1.4.0"},
     {"name": "ggplot2", "source": "cran", "version": "4.0.0"}
-  ]
+  ],
+  "files": {
+    "geolookup.R": {
+      "checksum": "09a69a14e5a6700c82a647d2a5830bbe"
+    }
+  },
+  "users": null
 }
