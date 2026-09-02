@@ -1,11 +1,16 @@
 import requests
 import json
+import os
 from datetime import datetime
 
 def fetch_air_quality(city):
     url = f"https://api.ambeedata.com/latest/by-city?city={city}"
+    api_key = os.environ.get("AMBEE_API_KEY")
+    if not api_key:
+        raise RuntimeError("AMBEE_API_KEY environment variable is not configured")
+
     headers = {
-        "x-api-key": "3de0b3998988a16cbb1fbb9fdbcbeee0cc8e47d325c74c985ff14860247fbcfe"
+        "x-api-key": api_key
     }
 
     response = requests.get(url, headers=headers)
