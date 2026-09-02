@@ -1,1 +1,10 @@
 .qodo
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.key
+__pycache__/
+*.py[cod]
+latest_air_quality.json
